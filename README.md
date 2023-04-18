@@ -1,2 +1,2 @@
 Repositorio de Lucas Becerra
-Hora actu: 12:30
+Hora actual: 12:30
