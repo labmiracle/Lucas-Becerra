@@ -16,6 +16,6 @@ pushToCollection(3, numberCollection);
 
 const incrementedByTwo = numberCollection.map((num) => num + 2);
 
-console.log('[Ejercicio 3.7]', `[${incrementedByTwo}] debe ser igual a [3,4,5]`);
+console.log('[Exercise 3.7]', `[${incrementedByTwo}] debe ser igual a [3,4,5]`);
 
-console.log("[Ejercicio 3.7]", `[${incrementedByTwo}] debe ser igual a [3,4,5]`);
+console.log("[Exercise 3.7]", `[${incrementedByTwo}] debe ser igual a [3,4,5]`);
