@@ -14,4 +14,4 @@ function doStuff(value: any): void {
     doStuff('hello');
     doStuff(true);
     doStuff({});
-    console.log('[Ejercicio 2.1]');
+    console.log('[Exercise 2.1]');
