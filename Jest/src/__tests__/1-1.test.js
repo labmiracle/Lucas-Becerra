@@ -1,6 +1,6 @@
 const { fizzBuzz } = require("../1-1.js");
 
-describe("testeo de la función fizzBuzz, Ej. 1-1", () => {
+describe("test func fizzBuzz", () => {
   test("si el num es divisible por 3", () => {
     expect(fizzBuzz(21)).toBe("Fizz");
   });
@@ -18,6 +18,6 @@ describe("testeo de la función fizzBuzz, Ej. 1-1", () => {
   });
 
   test("si no es un número", () => {
-    expect(fizzBuzz("hola que tal")).toBe("Debe ingresar un número");
+    expect(fizzBuzz("hola")).toBe("Debe ingresar un número");
   });
 });
