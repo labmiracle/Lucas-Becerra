@@ -1,14 +1,28 @@
-const { NumPosArr } = require("../1-4.js");
+const { sumArrPos } = require("../1-4.js");
 
-describe("NumPosArr", () => {
-  it("retorna la sum de los valores positivos del arr", () => {
-    expect(NumPosArr([1, 2, 3])).toBe(6);
-    expect(NumPosArr([-1, -2, -3])).toBe(0);
-    expect(NumPosArr([1, '2', 3])).toBe(6);
-    expect(NumPosArr(['1', '2', '3'])).toBe(6);
+describe("test para sumar positivos en arr", () => {
+  test("no ingresa nada", () => {
+    expect(sumArrPos([])).toBe(0);
   });
 
-  it("ignora los valores negat o cadenas del arr", () => {
-    expect(NumPosArr([1, -2, 'abc', '5', -6])).toBe(6);
+  test("no es arr", () => {
+    expect(sumArrPos("hola")).toBe("Ingresar array");
   });
+
+  test("arr caracteres especiales", () => {
+    expect(sumArrPos(["@"])).toBe(0);
+  });
+
+  test("arr de cadena de num", () => {
+    expect(sumArrPos(["1", "2", "3"])).toBe(6);
+  });
+  
+  test("arr de num en string", () => {
+    expect(sumArrPos(["uno","dos","tres"])).toBe(0);
+  });
+
+  test("num negativos", () => {
+    expect(sumArrPos([-1, -3])).toBe(0);
+  });
+
 });
