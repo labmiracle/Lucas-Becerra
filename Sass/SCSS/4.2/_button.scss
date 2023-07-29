@@ -1,0 +1,19 @@
+.button {
+    padding: 1px;
+    border-style: groove;
+    text-align: left;
+    background-color: aliceblue;
+
+    &-first {
+        @extend .button;
+        color: blue;
+        border-radius: 4px;
+    }
+
+    &-second {
+        @extend.button;
+        color: red;
+        border-radius: 4px;
+    }
+
+}

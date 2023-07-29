@@ -1,0 +1,19 @@
+$days: (
+    sunday: (color: yellow, background-color: #999)
+    monday: (color: blue, background-color: #FFF),
+    tuesday: (color: red, background-color: #EEE),
+    wednesday: (color: green, background-color: #DDD),
+    thursday: (color: brown, background-color: #CCC),
+    friday: (color: orange, background-color: #BBB),
+    saturday: (color: black, background-color: #AAA),
+);
+
+@each $day, $styles in $days {
+
+    .#{$day} {
+
+        @each $property, $value in $styles {
+            #{$property}: $value;
+        }
+    }
+}

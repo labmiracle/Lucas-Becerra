@@ -1,0 +1,25 @@
+@function get-day-color($d) {
+    @if $d == Monday {
+      @return red;
+    } @else if $d == Tuesday {
+      @return orange;
+    } @else if $d == Wednesday {
+      @return blue;
+    } @else if $d == Thursday {
+      @return green;
+    } @else if $d == Friday {
+      @return black;
+    } @else if $d == Saturday {
+      @return gray;
+    } @else if $d == Sunday {
+      @return brown;
+    } @else {
+      @return beige;
+    }
+  }
+  
+  @for $i from 1 through 7 {
+    .d-#{$i} {
+      background-color: get-day-color($i);
+    }
+  }

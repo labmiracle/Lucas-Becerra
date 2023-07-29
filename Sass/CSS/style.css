@@ -1,0 +1,38 @@
+@import url(.style.css);
+body.ul {
+  list-style: circle;
+  display: block;
+  margin: 7px;
+  padding: 5px; }
+
+main h1 {
+  font-size: large;
+  font-weight: 15px; }
+
+main p {
+  font-size: small;
+  font-weight: normal;
+  padding: 2px, 5px; }
+
+.button, .button-first, .button-second {
+  width: 40%;
+  height: 40%;
+  font-size: 20px; }
+
+button {
+  background-color: yellow; }
+
+p {
+  color: gray; }
+
+.button, .button-first, .button-second {
+  padding: 12px;
+  border-style: solid;
+  text-align: left;
+  background-color: whitesmoke; }
+  .button-first {
+    color: darkblue;
+    border-radius: 10px; }
+  .button-second {
+    color: red;
+    border-radius: 4 px; }

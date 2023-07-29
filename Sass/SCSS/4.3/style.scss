@@ -1,0 +1,11 @@
+@mixin heading-styles {
+  color: #777;
+  font-size: 24px;
+  font-weight: medium;
+  text-align: left;
+}
+
+  .container {
+    @include heading-styles;
+    margin-top: 10px;
+  }

@@ -1,0 +1,11 @@
+@mixin list ($value1, $value2) {
+    list-style: circle;
+    display: block;
+    margin: $value1;
+    padding: $value2;
+
+}
+
+body.ul {
+    @include list(7px, 5px);
+}

@@ -1,0 +1,20 @@
+.button {
+    padding: 12px;
+    border-style: solid;
+    text-align: left;
+    background-color: whitesmoke;
+
+
+    &-first {
+        @extend .button;
+        color: darkblue;
+        border-radius: 10px;
+
+    }
+
+    &-second {
+        @extend .button;
+        color: red;
+        border-radius: 4 px;
+    }
+}

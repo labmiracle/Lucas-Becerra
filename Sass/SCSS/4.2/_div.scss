@@ -1,0 +1,19 @@
+.div {
+    margin: 2px;
+    padding: 2px;
+}
+
+    &-main {
+        width: 250px;
+        height: 130px;
+        background-color: aqua;
+        border: 5px solid gray;
+    }
+
+
+    &-nav {
+        width: 80px;
+        height: 40px;
+        background-color: bisque;
+        border: 1px solid floralwhite;
+    }
