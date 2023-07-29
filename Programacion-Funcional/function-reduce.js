@@ -45,10 +45,10 @@ console.log (totalCharNames);
 
 //Obtener el número total de caracteres por color de ojos (pista: un mapa de color de ojos para contar)
 
-const charactersByEyeColor = characters.reduce((accumulator, character) => {
-    const eyeColor = character.eye_color;
-    accumulator[eyeColor] = (accumulator[eyeColor] || 0) + character.name.length;
-    return accumulator;
-  }, {});
-  
-  console.log(charactersByEyeColor);
+const charactersByEyeColor = characters.reduce((total, character) => {
+  const eyeColor = character.eye_color;
+  total[eyeColor] = (total[eyeColor] || 0) + character.name.length;
+  return total;
+}, {});
+
+console.log(charactersByEyeColor);
