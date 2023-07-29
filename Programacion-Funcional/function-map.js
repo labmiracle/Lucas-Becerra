@@ -27,18 +27,18 @@ const characters = [
 
 //Obtener un arreglo de todos los nombres
 
-  const NamesArray = characters.map(characters => characters.name); 
+  const namesArray = characters.map(characters => characters.name); 
   
-  console.log(NamesArray);
+  console.log(namesArray);
 
 //Obtener un arreglo de todas las alturas
 
-  const HeightsArray = characters.map(characters => characters.height);
+  const heightsArray = characters.map(characters => characters.height);
 
-  console.log (HeightsArray);
+  console.log (heightsArray);
 
 //Obtener un arreglo de objetos con las propiedades nombres y alturas  
 
-  const NameAndHeightArray = characters.map(characters => ({name:characters.name, height:characters.height }));
+  const nameAndHeightArray = characters.map(characters => ({name:characters.name, height:characters.height }));
 
-  console.log (NameAndHeightArray);
+  console.log (nameAndHeightArray);
