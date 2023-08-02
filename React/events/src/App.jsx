@@ -1,12 +1,16 @@
 import React from 'react';
 import Button from './components/Button';
+import TextImput from "./components/PaintedText";
+import ValueSelect from "./components/ValueSelect";
 
 function App() {
   return (
-    <div>
+    <>
       <h1>JSON</h1>
-      <Button />
-    </div>
+      <Button/>
+      <TextImput/>
+      <ValueSelect/>
+    </>
   );
 }
 
