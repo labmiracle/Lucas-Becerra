@@ -3,6 +3,7 @@ import { useState } from "react";
 import AforB from "./components/ab-exercise";
 import Desmontado from "./components/Desmontado";
 import Actualizando from "./components/Actualizando";
+import TodoAPI from "./components/TodoAPI";
 
 function App() {
   const [clicks, setClicks] = useState(0);
@@ -21,6 +22,9 @@ function App() {
       <div>
         <button onClick={handleClick}>Click me</button>
         <Actualizando clicks={clicks}></Actualizando>
+      </div>
+      <div>
+        <TodoAPI></TodoAPI>
       </div>
     </>
   );
