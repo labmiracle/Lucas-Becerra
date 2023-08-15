@@ -1,5 +1,5 @@
 import "./App.css";
-import Title from "./components/Title";
+import Title from "./components/title";
 import Text from "./components/Text";
 import List from "./components/List";
 import Link from "./components/Link";
