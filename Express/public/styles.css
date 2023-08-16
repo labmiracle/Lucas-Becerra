@@ -1,0 +1,12 @@
+h2 {
+    font-size: medium;
+    background-color: cornflowerblue;
+    display: grid;
+    justify-content: center;
+}
+
+p {
+    font-size: larger;
+    border-style: dashed;
+    text-align: center;
+}
